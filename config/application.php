@@ -79,7 +79,7 @@ return array(
 	'DebugMode'					=> false,					// Set to false to minimize technical details from being output by Flux. WARNING: DO NOT USE THIS OPTION ON A PUBLICALLY-ACCESSIBLE CP.
 	'UseCaptcha'				=> true,					// Use CAPTCHA image for account registration to prevent automated account creations. (Requires GD2/FreeType2)
 	'UseLoginCaptcha'			=> false,					// Use CAPTCHA image for account logins. (Requires GD2/FreeType2)
-	'EnableReCaptcha'			=> false,					// Enables the use of reCAPTCHA instead of Flux's native GD2 library (http://www.google.com/recaptcha)
+	'EnableReCaptcha'			=> true,					// Enables the use of reCAPTCHA instead of Flux's native GD2 library (http://www.google.com/recaptcha)
 	'ReCaptchaPublicKey'		=> '6LfvRcQUAAAAACOsLxbtcCUm09QYwh46Mwb-lTd4',					// This is your reCAPTCHA public key [REQUIRED FOR RECAPTCHA] (sign up at http://www.google.com/recaptcha)
 	'ReCaptchaPrivateKey'		=> '6LfvRcQUAAAAADviKgrBKh4i8df3bDwvtUVgAdUS',					// This is your reCAPTCHA private key [REQUIRED FOR RECAPTCHA] (sign up at http://www.google.com/recaptcha)
 	'ReCaptchaTheme'			=> 'light',					// ReCaptcha theme to use (Value: dark or light) (see: https://developers.google.com/recaptcha/docs/display#render_param)
