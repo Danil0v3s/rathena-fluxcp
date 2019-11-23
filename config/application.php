@@ -38,11 +38,11 @@ return array(
 															// PCRE Pattern Ref: http://php.net/manual/en/pcre.pattern.php
 	'MinUsernameLength'			=> 4,						// Minimum username length.
 	'MaxUsernameLength'			=> 23,						// Maximum username length.
-	'MinPasswordLength'			=> 8,						// Minimum password length.
+	'MinPasswordLength'			=> 6,						// Minimum password length.
 	'MaxPasswordLength'			=> 31,						// Maximum password length.
-	'PasswordMinUpper'			=> 1,						// Number of upper-case letters to require in passwords.
+	'PasswordMinUpper'			=> 0,						// Number of upper-case letters to require in passwords.
 	'PasswordMinLower'			=> 1,						// Number of lower-case letters to require in passwords.
-	'PasswordMinNumber'			=> 1,						// Number of numbers to require in passwords.
+	'PasswordMinNumber'			=> 0,						// Number of numbers to require in passwords.
 	'PasswordMinSymbol'			=> 0,						// Number of symbols to require in passwords.
 	'GMMinPasswordLength'		=> 8,						// Minimum password length for GM accounts.
 	'GMPasswordMinUpper'		=> 1,						// Number of upper-case letters to require in passwords for GM accounts.
