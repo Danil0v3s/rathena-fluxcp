@@ -1,5 +1,7 @@
 <?php if (!defined('FLUX_ROOT')) exit; ?>
-
+<?php 
+	$serverNames = $this->getServerNames();
+?>
 <form action="<?php echo $this->url('account', 'login', array('return_url' => $params->get('return_url'))) ?>" method="post">
 	<?php if (count($serverNames) === 1): ?>
 	<input type="hidden" name="server" value="<?php echo htmlspecialchars($session->loginAthenaGroup->serverName) ?>">
