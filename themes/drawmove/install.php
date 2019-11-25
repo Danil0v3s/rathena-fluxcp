@@ -138,7 +138,7 @@ foreach( $addons as $file )
 // Replace value in theme.
 echo '<h3>Setting Theme Name in [config/application.php]</h3>';
 $content = file_get_contents('../../config/application.php');
-$content  = preg_replace("#'ThemeName'([\t ]*)=>([\t ]*)(.+),#", "'ThemeName'            =>'Drawmove_Free_FluxCP_Theme',", $content). ' changed.';file_put_contents('../../config/application.php', $content);
+$content  = preg_replace("#'ThemeName'([\t ]*)=>([\t ]*)(.+),#", "'ThemeName'            =>array('drawmove'),", $content). ' changed.';file_put_contents('../../config/application.php', $content);
 echo 'Done';
 
 $conf['installed'] = 'yes';
