@@ -8,9 +8,9 @@
                 <div id="sidebar">
 					
 					<a href='?module=account&action=create'><img class="imageButton" src='<?php echo $this->themePath('img/register.png') ?>'/></a>
-					<a href='?module=pages&action=content&path=download'><img class="imageButton" src='<?php echo $this->themePath('img/download.png') ?>'/></a>
-					<a href='?module=voteforpoints'><img class="imageButton" src='<?php echo $this->themePath('img/vote.png') ?>'/></a>
-                    <a href='/forum'><img class="imageButton" src='<?php echo $this->themePath('img/forum.png') ?>'/></a>
+					<a href='?module=pages&action=content&path=downloads'><img class="imageButton" src='<?php echo $this->themePath('img/download.png') ?>'/></a>
+					<!-- <a href='?module=voteforpoints'><img class="imageButton" src='<?php echo $this->themePath('img/vote.png') ?>'/></a> -->
+                    <!-- <a href='/forum'><img class="imageButton" src='<?php echo $this->themePath('img/forum.png') ?>'/></a> -->
 
     				<br>
 					<!-- Drawmove Logo, you can remove it =) -->

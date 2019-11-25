@@ -35,10 +35,10 @@ if (file_exists($cache) && (time() - filemtime($cache)) < (Flux::config('ServerS
         fclose($fp);
     }
 }
-$server = array_values(array_values($serverStatus)[0])[0];
+$cServer = array_values(array_values($serverStatus)[0])[0];
 $serverOnline = "Off";
-$onlinePlayersCount = $server["playersOnline"];
-if ($server["loginServerUp"] && $server["charServerUp"] && $server["mapServerUp"]) {
+$onlinePlayersCount = $cServer["playersOnline"];
+if ($cServer["loginServerUp"] && $cServer["charServerUp"] && $cServer["mapServerUp"]) {
     $serverOnline = "On";
 }
 ?>
