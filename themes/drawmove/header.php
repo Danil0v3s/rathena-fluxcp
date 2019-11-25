@@ -128,10 +128,7 @@
 			<div id="header" style="background-image: url('<?php echo $this->themePath('img/bg.jpg'); ?>');">
 				<div id="topbar">
 					<div id="toppanel">
-						<div class="statusInfo">Server: <a id="server"  class="<?php echo $serverOnline; ?>" href="<?php echo $this->url('server', 'status'); ?>"><?php echo $serverOnline; ?></a></div>
-						<div class="statusInfo">Players: <a id="players" href="<?php echo $this->url('character', 'online'); ?>"><?php echo $onlinePlayersCount; ?></a> </div>
-                        <div class="statusInfo">WoE: <a id="woeUp" class="<?php echo $woeUp; ?>"href="<?php echo $this->url('woe', 'index'); ?>"><?php echo $woeUp; ?></a> </div>
-
+						<?php include('main/status.php'); ?>
                     </div> <!-- toppanel -->
 				</div> <!-- topbar -->
 				

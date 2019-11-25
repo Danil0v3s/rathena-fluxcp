@@ -4,7 +4,7 @@ return array(
 	// specify multiple server groups (however they should share the same login
 	// server whilst they are allowed to have multiple char/map pairs).
 	array(
-		'ServerName'     => 'FluxRO',
+		'ServerName'     => 'Skies RO',
 		// Global database configuration (excludes logs database configuration).
 		'DbConfig'       => array(
 			//'Socket'     => '/tmp/mysql.sock',
@@ -52,7 +52,7 @@ return array(
 		),
 		'CharMapServers' => array(
 			array(
-				'ServerName'      => 'FluxRO',
+				'ServerName'      => 'Skies RO',
 				'Renewal'         => false,
 				'MaxCharSlots'    => 9,
 				'DateTimezone'    => null, // Specifies game server's timezone for this char/map pair. (See: http://php.net/timezones)
@@ -102,8 +102,8 @@ return array(
 				),
 				// Modules and/or actions to disallow access to during WoE.
 				'WoeDisallow'   => array(
-					array('module' => 'character', 'action' => 'online'),  // Disallow access to "Who's Online" page during WoE.
-					array('module' => 'character', 'action' => 'mapstats') // Disallow access to "Map Statistics" page during WoE.
+					// array('module' => 'character', 'action' => 'online'),  // Disallow access to "Who's Online" page during WoE.
+					// array('module' => 'character', 'action' => 'mapstats') // Disallow access to "Map Statistics" page during WoE.
 				)
 			)
 		)
