@@ -1,7 +1,7 @@
 <?php 
 if (!defined('FLUX_ROOT')) exit;
 ?>           
-<h2><?php echo htmlspecialchars(Flux::message('CMSNewsHomeTitle')) ?></h2>
+<h2><?php echo htmlspecialchars(Flux::message('NewsLabel')) ?></h2>
 <?php if($news): ?>
 <div class="newsDiv">
 	<?php foreach($news as $nrow):?>

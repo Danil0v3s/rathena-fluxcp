@@ -383,7 +383,7 @@ return array(
 			'add'			=> 'Add New Page',
 		),
 		'news'			=> array(
-			'index'			=> 'Latest News',
+			'index'			=> 'Mais recentes',
 			'manage'			=> 'Manage',
 			'add'			=> 'Add News',
 		),

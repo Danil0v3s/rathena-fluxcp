@@ -21,7 +21,7 @@
             
             
 	<?php if (!empty($adminMenuItems) && Flux::config('AdminMenuNewStyle')): ?>
-	<?php $mItems = array(); foreach ($adminMenuItems as $menuItem) $mItems[] = sprintf('<a href="%s">%s</a>', $menuItem['url'], $menuItem['name']) ?>
+	<?php $mItems = array(); foreach ($adminMenuItems as $menuItem) $mItems[] = sprintf('<a href="%s">%s</a>', $menuItem['url'], Flux::message($menuItem['name'])) ?>
 
 	
 			<strong>Admin</strong>: <?php echo implode(' • ', $mItems) ?>
