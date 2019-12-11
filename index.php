@@ -1,4 +1,6 @@
 <?php
+ini_set('post_max_size', '500M');
+ini_set('upload_max_filesize', '500M');
 if (version_compare(PHP_VERSION, '5.2.1', '<')) {
 	echo '<h2>Error</h2>';
 	echo '<p>PHP 5.2.1 or higher is required to use Flux Control Panel.</p>';
