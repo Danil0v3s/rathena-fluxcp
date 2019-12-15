@@ -1050,7 +1050,7 @@ a {
 #wrapperMain {
     display: inline-block;
 	padding:0px;
-	flex-grow: 1;
+	width: 100%;
 }
 
 #main {
