@@ -2,11 +2,11 @@
 // This is the application configuration file. All values have been set to
 // the default, and should be changed as needed.
 return array(
-	'ServerAddress'				=> '18.223.243.199' ,				// This value is the hostname:port under which Flux runs. (e.g., example.com or example.com:80)
+	'ServerAddress'				=> '18.223.243.199',				// This value is the hostname:port under which Flux runs. (e.g., example.com or example.com:80)
 	'BaseURI'					=> '/',						// The base URI is the base web root on which your application lies.
 	'InstallerPassword'			=> 'FGErux3g4YBLNNWUyN!y',		// Installer/updater password.
 	'RequireOwnership'			=> true,					// Require the executing user to be owner of the FLUX_ROOT/data/ directory tree? (Better for security)
-															// WARNING: This will be mostly IGNORED on non-POSIX-compliant OSes (e.g. Windows).
+	// WARNING: This will be mostly IGNORED on non-POSIX-compliant OSes (e.g. Windows).
 	'DefaultLoginGroup'			=> null,
 	'DefaultCharMapServer'		=> null,
 	'DefaultLanguage'			=> 'pt_br',					// Specify the default control panel language (see FLUX_ROOT/lang/ directory for available languages.)
@@ -34,8 +34,8 @@ return array(
 	'SingleMatchRedirectItem'	=> false,					// Same as above, for item module.
 	'SingleMatchRedirectMobs'	=> false,					// Same as above, for monster module.
 	'UsernameAllowedChars'		=> 'a-zA-Z0-9_',			// PCRE Format Pattern. default: 'a-zA-Z0-9_' (alphanumeric and underscore)
-															// WARNING: This string isn't escaped so be careful which chars you use!
-															// PCRE Pattern Ref: http://php.net/manual/en/pcre.pattern.php
+	// WARNING: This string isn't escaped so be careful which chars you use!
+	// PCRE Pattern Ref: http://php.net/manual/en/pcre.pattern.php
 	'MinUsernameLength'			=> 4,						// Minimum username length.
 	'MaxUsernameLength'			=> 23,						// Maximum username length.
 	'MinPasswordLength'			=> 6,						// Minimum password length.
@@ -68,15 +68,15 @@ return array(
 	'ServerStatusCache'			=> 2,						// Store a cached server status and refresh every X minutes.  Default: 2 minutes (value is measured in minutes).
 	'ServerStatusTimeout'		=> 2,						// For each server, spend X amount of seconds to determine whether it's up or not.
 	'SessionKey'				=> 'fluxSessionData',		// Shouldn't be changed, just specifies the session key to be used for session data.
-	'DefaultModule'				=> 'main',					// This is the module to execute when none has been specified.
+	'DefaultModule'				=> 'news',					// This is the module to execute when none has been specified.
 	'DefaultAction'				=> 'index',					// This is the default action for any module, probably should leave this alone. (Deprecated)
 	'GzipCompressOutput'		=> false,					// Whether or not to compress output using zlib.
 	'GzipCompressionLevel'		=> 9,						// zlib compression level. (1~9)
 	'OutputCleanHTML'			=> true,					// Use this if you have Tidy installed to clean your HTML output when serving pages.
 	'ShowCopyright'				=> true,					// Whether or not to show the copyright footer.
 	'ShowRenderDetails'			=> true,					// Shows the "page rendered in X seconds" and "number of queries executed: X" in the default theme.
-	'UseCleanUrls'				=> true,					// Set to true if you're running Apache and it supports mod_rewrite and .htaccess files.
-	'DebugMode'					=> true,					// Set to false to minimize technical details from being output by Flux. WARNING: DO NOT USE THIS OPTION ON A PUBLICALLY-ACCESSIBLE CP.
+	'UseCleanUrls'				=> false,					// Set to true if you're running Apache and it supports mod_rewrite and .htaccess files.
+	'DebugMode'					=> false,					// Set to false to minimize technical details from being output by Flux. WARNING: DO NOT USE THIS OPTION ON A PUBLICALLY-ACCESSIBLE CP.
 	'UseCaptcha'				=> false,					// Use CAPTCHA image for account registration to prevent automated account creations. (Requires GD2/FreeType2)
 	'UseLoginCaptcha'			=> false,					// Use CAPTCHA image for account logins. (Requires GD2/FreeType2)
 	'EnableReCaptcha'			=> true,					// Enables the use of reCAPTCHA instead of Flux's native GD2 library (http://www.google.com/recaptcha)
@@ -95,7 +95,7 @@ return array(
 	'MoneyThousandsSymbol'		=> ',',						// (Visual) Thousandths place separator (a period in European currencies).
 	'MoneyDecimalSymbol'		=> '.',						// (Visual) Decimal separator (a comma in European currencies).
 	'AcceptDonations'			=> true,					// Whether or not to accept donations.
-	'PayPalIpnUrl'				=> 'www.sandbox.paypal.com',// The URL for PayPal's IPN responses (www.paypal.com for live and www.sandbox.paypal.com for testing)
+	'PayPalIpnUrl'				=> 'www.sandbox.paypal.com', // The URL for PayPal's IPN responses (www.paypal.com for live and www.sandbox.paypal.com for testing)
 	'PayPalBusinessEmail'		=> 'admin@localhost',		// Enter the e-mail under which you have registered your business account.
 	'PayPalReceiverEmails'		=> array(					// These are the receiver e-mail addresses who are allowed to receive payment.
 		//'admin2@localhost',								// -- This array may be empty if you only use one e-mail
@@ -106,8 +106,8 @@ return array(
 	'DivorceKeepChild'			=> false,					// Keep child after divorce?
 	'DivorceKeepRings'			=> false,					// Keep wedding rings after divorce?
 	'IpWhitelistPattern'		=>							// PCRE Format Pattern. It's recommended you add your gameserver, webserver and server owner's IPs here.
-		'(127\.0\.0\.1|0(\.[0\*]){3})',						// WARNING: This string isn't escaped so be careful which chars you use!
-															// By default, whitelists 127.0.0.1 (localhost) and 0.0.0.0 (all interfaces; whitelists all wildcard bans that can achive this too)
+	'(127\.0\.0\.1|0(\.[0\*]){3})',						// WARNING: This string isn't escaped so be careful which chars you use!
+	// By default, whitelists 127.0.0.1 (localhost) and 0.0.0.0 (all interfaces; whitelists all wildcard bans that can achive this too)
 	'AllowIpBanLogin'			=> false,					// Allow logging into account from banned IP.
 	'AllowTempBanLogin'			=> false,					// Allow logging in of temporarily banned accounts.
 	'AllowPermBanLogin'			=> false,					// Allow logging in of permanently banned accounts.
@@ -115,7 +115,7 @@ return array(
 	'ItemShopMaxCost'			=> 99,						// Max price an item can be sold for.
 	'ItemShopMaxQuantity'		=> 99,						// Max quantity the item may be sold at once for.
 	'ItemShopItemPerPage'		=> 5,						// The number of items to display per page in the "Item Shop" page.
-    'ShowItemDesc'              => true,                   // Displays generated item descs from parsed itemInfo.lua
+	'ShowItemDesc'              => true,                   // Displays generated item descs from parsed itemInfo.lua
 	'HideFromWhosOnline'		=> AccountLevel::NOONE,		// Levels greater than or equal to this will be hidden from the "Who's Online" page.
 	'HideFromMapStats'			=> AccountLevel::NOONE,		// Levels greater than or equal to this will be hidden from the "Map Stats" page.
 	'EnableGMPassSecurity'		=> AccountLevel::LOWGM,		// Levels greater than or equal to this will be required to use passwords that meet the earlier GM Password settings.
@@ -126,21 +126,21 @@ return array(
 	),
 
 	'HoldUntrustedAccount'		=> 0,						// This is the time in hours to hold a donation crediting process for, if the account
-															// isn't a trusted account. Specify 0 or false to disable this feature.
+	// isn't a trusted account. Specify 0 or false to disable this feature.
 
 	'AutoUnholdAccount'			=> false,					// Enable this to auto-unhold an account and credit it if the transaction is still
-															// valid.  This only applies if you are using the HoldUnstrustedAccount feature.
-															// If you want to run a cron job instead, you can make a request to the '/donate/update'
-															// module/action with the InstallerPassword as the password to run the update task.
-															// With clean URLs: http://<server>/<baseURI>/donate/update?password=<InstallerPassword>
-															// Without clean URLs: http://<server>/<baseURI>?module=donate&action=update&password=<InstallerPassword>
-															// NOTE: This option is HIGHLY inefficient, it's recommended to run a cron job instead.
+	// valid.  This only applies if you are using the HoldUnstrustedAccount feature.
+	// If you want to run a cron job instead, you can make a request to the '/donate/update'
+	// module/action with the InstallerPassword as the password to run the update task.
+	// With clean URLs: http://<server>/<baseURI>/donate/update?password=<InstallerPassword>
+	// Without clean URLs: http://<server>/<baseURI>?module=donate&action=update&password=<InstallerPassword>
+	// NOTE: This option is HIGHLY inefficient, it's recommended to run a cron job instead.
 
 	'AutoPruneAccounts'			=> false,					// Enable this to automatically prune expired accounts. Enabling this is a performance
-															// performance killer. See 'AutoUnholdAccount' for running this task as a cron job,
-															// the module is 'account' and the action is 'prune'.
-															// With clean URLs: http://<server>/<baseURI>/account/prune?password=<InstallerPassword>
-															// Without clean URLs: http://<server>/<baseURI>?module=account&action=prune&password=<InstallerPassword>
+	// performance killer. See 'AutoUnholdAccount' for running this task as a cron job,
+	// the module is 'account' and the action is 'prune'.
+	// With clean URLs: http://<server>/<baseURI>/account/prune?password=<InstallerPassword>
+	// Without clean URLs: http://<server>/<baseURI>?module=account&action=prune&password=<InstallerPassword>
 
 	'ShopImageExtensions'		=> array(					// These are the image extensions allowed for uploading in the item shop.
 		'png', 'jpg', 'gif', 'bmp', 'jpeg'
@@ -155,7 +155,7 @@ return array(
 	'BlacksmithRankingLimit'	=> 20,						//
 	'HomunRankingLimit'			=> 20,						//
 	'MVPRankingLimit'			=> 20,						//
-	
+
 	'RankingHideGroupLevel'		=> AccountLevel::LOWGM,		//
 	'InfoHideZenyGroupLevel'	=> AccountLevel::LOWGM,		// Minimum group level of account to hide zeny from in server information page.
 
@@ -196,19 +196,19 @@ return array(
 
 	'AdminMenuNewStyle'			=> true,					// Use new-style admin menu;  Applies to 'default' theme.
 	'EnablePeakDisplay'			=> true,					// Display Peak User count on Server Status page.
-	
-	
-// News Options
+
+
+	// News Options
 	'CMSNewsOnHomepage'			=> true,					// Display News on Home Page instead of "You've Just Installed FluxCP" message?
 	'CMSNewsType'				=> 1,						// Type = source of news feed:
-															//	1 = Built-in news page
-															//	2 = RSS Import
+	//	1 = Built-in news page
+	//	2 = RSS Import
 
 	'CMSNewsRSS'				=> 'https://rathena.org/board/rss/1-latest-community-announcements.xml/',		// Use if CMSNewsType = 2
 	'CMSNewsLimit'				=> 4,						// Number of news items to display
 	'CMSDisplayModifiedBy'		=> false,					// If a news item has been modified, display modified date under news item?
 
-// Service Desk
+	// Service Desk
 	'StaffReplyColour'			=> 'brown',
 	'FontResolvedColour'		=> 'green',
 	'FontPendingColour'			=> 'orange',
@@ -216,7 +216,7 @@ return array(
 	'SDEnableCreditRewards'		=> true,					// Show option in Service Desk to reward player X credits for reporting bugs/abuse/etc.
 	'SDCreditReward'			=> 10,						// Number of credits to award account.
 
-// Discord Webhooks
+	// Discord Webhooks
 	'DiscordUseWebhook'			=> false,
 	'DiscordWebhookURL'			=> 'enter_webhook_url_from_discord_here',
 	'DiscordSendOnRegister'			=> true,
@@ -230,13 +230,13 @@ return array(
 	// their login status.
 	'MenuItems'		=> array(
 		'MainMenuLabel'		=> array(
-			'HomeLabel'			=> array('module' => 'main'),
+			// 'HomeLabel'			=> array('module' => 'main'),
 			//'ForumLabel'		=> array('exturl' => 'http://www.fluxro.com/community'),	// External forum link
 			//'ForumLabel'		=> array('module' => 'forums'), 						// Built-in forum link
 			'NewsLabel'			=> array('module' => 'news'),
 			// Sample items for pages function.
-			'DownloadsLabel'		=> array('module' => 'pages','action'=>'content&path=downloads'),
-			'RulesLabel'			=> array('module' => 'pages','action'=>'content&path=rules'),
+			'DownloadsLabel'		=> array('module' => 'pages', 'action' => 'content&path=downloads'),
+			'RulesLabel'			=> array('module' => 'pages', 'action' => 'content&path=rules'),
 			// End sample items for pages function.
 		),
 		'AccountLabel'		=> array(
@@ -244,20 +244,20 @@ return array(
 			'LoginTitle'			=> array('module' => 'account', 'action' => 'login'),
 			'MyAccountLabel'	=> array('module' => 'account', 'action' => 'view'),
 			'HistoryLabel'		=> array('module' => 'history'),
-			'ServiceDeskLabel'	=> array('module' => 'servicedesk'),
+			// 'ServiceDeskLabel'	=> array('module' => 'servicedesk'),
 			'LogoutTitle'		=> array('module' => 'account', 'action' => 'logout'),
 		),
-		'DonationsLabel'		=> array(
-			'PurchaseLabel'		=> array('module' => 'purchase'),
-			'DonateLabel'		=> array('module' => 'donate'),
-		),
+		// 'DonationsLabel'		=> array(
+		// 	'PurchaseLabel'		=> array('module' => 'purchase'),
+		// 	'DonateLabel'		=> array('module' => 'donate'),
+		// ),
 		'InformationLabel'	=> array(
 			'ServerInfoLabel'	=> array('module' => 'server', 'action' => 'info'),
 			'ServerStatusLabel'	=> array('module' => 'server', 'action' => 'status'),
 			'WoeHoursLabel'		=> array('module' => 'woe'),
 			'CastlesLabel'		=> array('module' => 'castle'),
 			'WhosOnlineLabel'	=> array('module' => 'character', 'action' => 'online'),
-			'MapStaticsLabel'=> array('module' => 'character', 'action' => 'mapstats'),
+			'MapStaticsLabel' => array('module' => 'character', 'action' => 'mapstats'),
 			'RankingInfoLabel'	=> array('module' => 'ranking', 'action' => 'character'),
 			'VendingInfoLabel'	=> array('module' => 'vending'),
 			'BuyingstoreInfoLabel'	=> array('module' => 'buyingstore'),
@@ -266,13 +266,13 @@ return array(
 			'ItemDatabaseLabel'	=> array('module' => 'item'),
 			'MobDatabaseLabel'	=> array('module' => 'monster'),
 		),
-		'SocialLabel'		=> array(
-			'JoinUsInFacebookLabel'	=> array('exturl' => 'https://www.facebook.com/<change_me>'),
-			'RateUsOnRMSLabel'		=> array('exturl' => '<link_to_RMS>'),
-		),
-		'Service Desk'	=> array(
-			'ServiceDeskLabel'	=> array('module' => 'servicedesk', 'action' => 'staffindex'),
-		),
+		// 'SocialLabel'		=> array(
+		// 	'JoinUsInFacebookLabel'	=> array('exturl' => 'https://www.facebook.com/<change_me>'),
+		// 	'RateUsOnRMSLabel'		=> array('exturl' => '<link_to_RMS>'),
+		// ),
+		// 'Service Desk'	=> array(
+		// 	'ServiceDeskLabel'	=> array('module' => 'servicedesk', 'action' => 'staffindex'),
+		// ),
 		'Misc. Stuff'	=> array(
 			'AccountLabel'		=> array('module' => 'account'),
 			'CharacterLabel'	=> array('module' => 'character'),
@@ -283,14 +283,14 @@ return array(
 			'IPBanListLabel'	=> array('module' => 'ipban'),
 			'rALogsLabel'		=> array('module' => 'logdata'),
 			'ReInstallLabel'	=> array('module' => 'install', 'action' => 'reinstall'),
-			'SendMailLabel'		=> array('module' => 'mail'),
-			'WCTitleLabel'		=> array('module' => 'webcommands'),
+			// 'SendMailLabel'		=> array('module' => 'mail'),
+			// 'WCTitleLabel'		=> array('module' => 'webcommands'),
 			'Cash Shop'			=> array('module' => 'cashshop'),
 			//'Auction'		=> array('module' => 'auction'),
 			//'Economy'		=> array('module' => 'economy')
 		)
 	),
-	
+
 	// Sub-menu items that are displayed for any action belonging to a
 	// particular module. The format it simple.
 	'SubMenuItems'	=> array(
@@ -307,13 +307,13 @@ return array(
 			'changepass'	=> 'Change Password',
 			'changemail'	=> 'Change E-mail',
 			'changesex'		=> 'Change Gender',
-			'transfer'		=> 'Transfer Credits',
-			'xferlog'		=> 'Credit Transfer History',
-			'cart'			=> 'Go to Shopping Cart',
+			// 'transfer'		=> 'Transfer Credits',
+			// 'xferlog'		=> 'Credit Transfer History',
+			// 'cart'			=> 'Go to Shopping Cart',
 			'login'			=> 'Login',
 			'create'		=> 'Register',
 			'resetpass'		=> 'Reset Password',
-			'resend'		=> 'Resend E-mail Confirmation'
+			// 'resend'		=> 'Resend E-mail Confirmation'
 		),
 		'guild'			=> array(
 			'index'			=> 'List Guilds',
@@ -389,7 +389,7 @@ return array(
 		),
 		'servicedesk'	=> array(
 			'staffindex'	=> 'View Active',
-			'staffviewclosed'=> 'View Closed',
+			'staffviewclosed' => 'View Closed',
 			'staffsettings'	=> 'Staff Settings',
 			'catcontrol'	=> 'Category Control',
 		),
@@ -400,7 +400,7 @@ return array(
 			'index'			=> 'Buyers',
 		),
 	),
-	
+
 	'AllowMD5PasswordSearch'		=> false,
 	'ReallyAllowMD5PasswordSearch'	=> false, // Are you POSITIVELY sure?
 
@@ -513,8 +513,8 @@ return array(
 		'ServiceDeskCatTable'	=> 'cp_servicedeskcat',
 		'ServiceDeskSettingsTable'	=> 'cp_servicedesksettings',
 		'WebCommandsTable'		=> 'cp_commands',
-        'ItemDescTable'     	=> 'cp_itemdesc',
+		'ItemDescTable'     	=> 'cp_itemdesc',
 	)
 );
 ?>
- changed. changed. changed. changed. changed.
+changed. changed. changed. changed. changed.
