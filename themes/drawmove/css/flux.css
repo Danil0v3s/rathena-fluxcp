@@ -985,6 +985,7 @@ body {
 
 .colwidth {
 	width:80%;
+	height: 100%;
 	margin:0 auto;
 	position:relative;
 	display: flex;
@@ -1098,11 +1099,9 @@ a {
 
 
 #loginbox {
-	padding-top:9px;
-	float:right;
-	width:310px;
-	overflow:hidden;
 	margin-left: auto;
+	align-items: center;
+	display: flex;
 }
 
 #loginbox input {
