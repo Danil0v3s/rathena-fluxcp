@@ -1014,14 +1014,11 @@ a {
 	margin:0;
 	position:relative;
 	z-index:5px;
-
-
 }
 
 #menu ul {
-	padding-top:15px;
-	float:left;
-	margin:0px;
+	margin-left: -40px;
+	align-self: center;
 }
 
 #menu li{
@@ -1036,7 +1033,6 @@ a {
 	background: repeat-x top left;
 	margin:0;
 	padding-top:15px;
-	/*overflow:auto;*/
 }
 
 #sidebar {
@@ -1100,8 +1096,7 @@ a {
 
 #loginbox {
 	margin-left: auto;
-	align-items: center;
-	display: flex;
+	align-self: center;
 }
 
 #loginbox input {
