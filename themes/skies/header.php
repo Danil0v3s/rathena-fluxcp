@@ -38,8 +38,12 @@
 
 	<!-- Fixed navbar -->
 	<div class="bg-header">
+		<a href="https://discordapp.com/invite/u9z63b3">
+			<div class="btn-discord">
+				<img src="/themes/skies/img/discord-full.svg" />
+			</div>
+		</a>
 		<div id="drawmoveCanvasContainer">
-			<canvas id="mainCanvas" width="400" height="400"></canvas>
 		</div>
 	</div>
 	<?php include $this->themePath('main/navbar.php', true) ?>

@@ -1,3 +1,7 @@
+a:hover {
+    background-color: skyblue;
+}
+
 body {
   font-family: "Montserrat";
   margin: 0;
@@ -12,6 +16,10 @@ body > .container {
   height: 370px;
   width: 100%;
   text-align: center;
+}
+
+.navbar {
+    border-radius: 0 !important;
 }
 
 .navbar.center .navbar-inner {
@@ -44,28 +52,50 @@ body > .container {
     background: url("../img/info.gif") center 0px no-repeat;
     margin: 0 auto;
     background-size: contain;
+    margin-bottom: 7px;
 }
 
 .ic-main {
     background: url("../img/info.gif") center 0px no-repeat;
     margin: 0 auto;
     background-size: contain;
+    margin-bottom: 7px;
 }
 
 .ic-account {
     background: url("../img/account.gif") center 0px no-repeat;
     margin: 0 auto;
     background-size: contain;
+    margin-bottom: 7px;
 }
 
 .ic-db {
     background: url("../img/search.gif") center 0px no-repeat;
     margin: 0 auto;
     background-size: contain;
+    margin-bottom: 7px;
 }
 
 .ic-admin {
     background: url("../img/admin.gif") center 0px no-repeat;
     margin: 0 auto;
     background-size: contain;
+    margin-bottom: 7px;
+}
+
+.btn-discord {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+
+.btn-discord > img {
+    padding: 10px;
+    background: whitesmoke;
+    position: absolute;
+    width: auto;
+    left: 5%;
+    bottom: 5%;
+    border-radius: 7px;
 }
