@@ -4,18 +4,18 @@ return array(
 	// specify multiple server groups (however they should share the same login
 	// server whilst they are allowed to have multiple char/map pairs).
 	array(
-		'ServerName'     => 'FluxRO',
+		'ServerName'     => 'Skies RO',
 		// Global database configuration (excludes logs database configuration).
 		'DbConfig'       => array(
 			//'Socket'     => '/tmp/mysql.sock',
 			//'Port'       => 3306,
-			//'Encoding'   => 'utf8', // Connection encoding -- use whatever here your MySQL tables collation is.
+			'Encoding'   => 'utf8', // Connection encoding -- use whatever here your MySQL tables collation is.
 			'Convert'    => 'utf8',
 				// -- 'Convert' option only works when 'Encoding' option is specified and iconv (http://php.net/iconv) is available.
 				// -- It specifies the encoding to convert your MySQL data to on the website (most likely needs to be utf8)
-			'Hostname'   => '127.0.0.1',
+			'Hostname'   => 'server.skiesro.com.br' ,
 			'Username'   => 'ragnarok',
-			'Password'   => 'ragnarok',
+			'Password'   => 'Bz4y7xKx9KYqvaXpXBNK',
 			'Database'   => 'ragnarok',
 			'Persistent' => true,
 			'Timezone'   => null // Example: '+0:00' is UTC.
@@ -34,16 +34,16 @@ return array(
 			'Convert'    => 'utf8',
 				// -- 'Convert' option only works when 'Encoding' option is specified and iconv (http://php.net/iconv) is available.
 				// -- It specifies the encoding to convert your MySQL data to on the website (most likely needs to be utf8)
-			'Hostname'   => '127.0.0.1',
+			'Hostname'   => 'server.skiesro.com.br' ,
 			'Username'   => 'ragnarok',
-			'Password'   => 'ragnarok',
+			'Password'   => 'Bz4y7xKx9KYqvaXpXBNK',
 			'Database'   => 'ragnarok',
 			'Persistent' => true,
 			'Timezone'   => null // Possible values is as described in the comment in DbConfig.
 		),
 		// Login server configuration.
 		'LoginServer'    => array(
-			'Address'  => '127.0.0.1',
+			'Address'  => 'server.skiesro.com.br' ,
 			'Port'     => 6900,
 			'UseMD5'   => false,
 			'NoCase'   => true, // rA account case-sensitivity; Default: Case-INsensitive (true).
@@ -52,8 +52,8 @@ return array(
 		),
 		'CharMapServers' => array(
 			array(
-				'ServerName'      => 'FluxRO',
-				'Renewal'         => true,
+				'ServerName'      => 'Skies RO',
+				'Renewal'         => false,
 				'MaxCharSlots'    => 9,
 				'DateTimezone'    => null, // Specifies game server's timezone for this char/map pair. (See: http://php.net/timezones)
 				//'ResetDenyMaps'   => 'sec_pri', // Defaults to 'sec_pri'. This value can be an array of map names.
@@ -83,11 +83,11 @@ return array(
 					'MvpItem'     => 100
 				),
 				'CharServer'      => array(
-					'Address'     => '127.0.0.1',
+					'Address'     => 'server.skiesro.com.br' ,
 					'Port'        => 6121
 				),
 				'MapServer'       => array(
-					'Address'     => '127.0.0.1',
+					'Address'     => 'server.skiesro.com.br' ,
 					'Port'        => 5121
 				),
 				// -- WoE days and times --
@@ -102,8 +102,8 @@ return array(
 				),
 				// Modules and/or actions to disallow access to during WoE.
 				'WoeDisallow'   => array(
-					array('module' => 'character', 'action' => 'online'),  // Disallow access to "Who's Online" page during WoE.
-					array('module' => 'character', 'action' => 'mapstats') // Disallow access to "Map Statistics" page during WoE.
+					// array('module' => 'character', 'action' => 'online'),  // Disallow access to "Who's Online" page during WoE.
+					// array('module' => 'character', 'action' => 'mapstats') // Disallow access to "Map Statistics" page during WoE.
 				)
 			)
 		)
