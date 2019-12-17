@@ -3,6 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta property="og:title" content="SkiesRO - Full PvP 999/255">
+	<meta property="og:image" content="https://i.imgur.com/G4eZSQy.png">
+	<meta property="og:description" content="Full PvP 999/255. Classes balanceadas, sem donates, delay em pots, sistemas únicos e muito mais!">
+	<meta property="og:url" content="https//www.skiesro.com.br">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<?php if (isset($metaRefresh)) : ?>
 		<meta http-equiv="refresh" content="<?php echo $metaRefresh['seconds'] ?>; URL=<?php echo $metaRefresh['location'] ?>" />
