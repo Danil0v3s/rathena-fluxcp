@@ -1,0 +1,31 @@
+body {
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+body > .container {
+    padding: 0 !important;
+}
+
+.bg-header {
+  background: #131313 url("../img/bg.jpg") center 0px no-repeat;
+  height: 370px;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+
+#mainCanvas {
+	position:absolute;
+	right:20%;
+	z-index:0px;
+	top:10px;
+}
