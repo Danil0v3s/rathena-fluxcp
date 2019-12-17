@@ -1,7 +1,13 @@
 <?php if (!defined('FLUX_ROOT')) exit; ?>
-
-<?php if (!defined('FLUX_ROOT')) exit; ?>
-
+<?php
+$menuIcons = array(
+	// Generic/Misc.
+	'MainMenuLabel'	=> 'ic-main',
+	'AccountLabel'	=> 'ic-account',
+	'InformationLabel'	=> 'ic-info',
+	'DatabaseLabel'	=> 'ic-db',
+)
+?>
 <nav class="navbar navbar-default center" role="navigation">
 	<div class="navbar-inner">
 		<ul class="nav navbar-nav">
@@ -9,8 +15,11 @@
 			<?php if (!empty($menuItems)) : ?>
 				<?php foreach ($menuItems as $menuCategory => $menus) : ?>
 					<?php if (!empty($menus)) : ?>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo htmlspecialchars(Flux::message($menuCategory)) ?> <b class="caret"></b></a>
+						<li class="dropdown ro-dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<div class="ro-icon <?php echo $menuIcons[$menuCategory]?>"></div>
+								<?php echo htmlspecialchars(Flux::message($menuCategory)) ?> <b class="caret"></b>
+							</a>
 							<ul class="dropdown-menu">
 								<?php foreach ($menus as $menuItem) :  ?>
 									<li>

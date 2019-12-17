@@ -29,3 +29,37 @@ body > .container {
 	z-index:0px;
 	top:10px;
 }
+
+.ro-dropdown {
+    min-width: 160px;
+}
+
+.ro-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.ic-info {
+    background: url("../img/info.gif") center 0px no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.ic-main {
+    background: url("../img/info.gif") center 0px no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.ic-account {
+    background: url("../img/account.gif") center 0px no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.ic-db {
+    background: url("../img/search.gif") center 0px no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+}
