@@ -5,7 +5,7 @@ $menuIcons = array(
 	'MainMenuLabel'	=> 'ic-main',
 	'AccountLabel'	=> 'ic-account',
 	'InformationLabel'	=> 'ic-info',
-	'DatabaseLabel'	=> 'ic-db',
+	'DatabaseLabel'	=> 'ic-db'
 )
 ?>
 <nav class="navbar navbar-default center" role="navigation">
@@ -17,7 +17,7 @@ $menuIcons = array(
 					<?php if (!empty($menus)) : ?>
 						<li class="dropdown ro-dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<div class="ro-icon <?php echo $menuIcons[$menuCategory]?>"></div>
+								<div class="ro-icon <?php echo $menuIcons[$menuCategory] ?>"></div>
 								<?php echo htmlspecialchars(Flux::message($menuCategory)) ?> <b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">
@@ -36,7 +36,10 @@ $menuIcons = array(
 			<?php $adminMenuItems = $this->getAdminMenuItems(); ?>
 			<?php if (!empty($adminMenuItems) && Flux::config('AdminMenuNewStyle')) : ?>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin Menu <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<div class="ro-icon ic-admin"></div>
+						Admin Menu <b class="caret"></b>
+					</a>
 					<ul class="dropdown-menu">
 						<?php foreach ($adminMenuItems as $menuItem) : ?>
 							<li>
