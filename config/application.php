@@ -229,16 +229,22 @@ return array(
 	// not at any given time depends on the user's account group level and/or
 	// their login status.
 	'MenuItems'		=> array(
-		'MainMenuLabel'		=> array(
-			// 'HomeLabel'			=> array('module' => 'main'),
-			//'ForumLabel'		=> array('exturl' => 'http://www.fluxro.com/community'),	// External forum link
-			//'ForumLabel'		=> array('module' => 'forums'), 						// Built-in forum link
-			'NewsLabel'			=> array('module' => 'news'),
-			// Sample items for pages function.
-			'DownloadsLabel'		=> array('module' => 'pages', 'action' => 'content&path=downloads'),
-			'RulesLabel'			=> array('module' => 'pages', 'action' => 'content&path=rules'),
-			// End sample items for pages function.
+		'NewsLabel' => array(
+			'NewsLabel' => array('module' => 'news')
 		),
+		'DownloadsLabel' => array(
+			'DownloadsLabel' => array('module' => 'pages', 'action' => 'content&path=downloads')
+		),
+		// 'MainMenuLabel'		=> array(
+		// 	// 'HomeLabel'			=> array('module' => 'main'),
+		// 	//'ForumLabel'		=> array('exturl' => 'http://www.fluxro.com/community'),	// External forum link
+		// 	//'ForumLabel'		=> array('module' => 'forums'), 						// Built-in forum link
+		// 	'NewsLabel'			=> array('module' => 'news'),
+		// 	// Sample items for pages function.
+		// 	'DownloadsLabel'		=> array('module' => 'pages', 'action' => 'content&path=downloads'),
+		// 	'RulesLabel'			=> array('module' => 'pages', 'action' => 'content&path=rules'),
+		// 	// End sample items for pages function.
+		// ),
 		'AccountLabel'		=> array(
 			'AccountCreateHeading'		=> array('module' => 'account', 'action' => 'create'),
 			'LoginTitle'			=> array('module' => 'account', 'action' => 'login'),
@@ -254,13 +260,13 @@ return array(
 		'InformationLabel'	=> array(
 			'ServerInfoLabel'	=> array('module' => 'pages', 'action' => 'content&path=informations'),
 			'ServerStatusLabel'	=> array('module' => 'server', 'action' => 'status'),
-			'WoeHoursLabel'		=> array('module' => 'woe'),
-			'CastlesLabel'		=> array('module' => 'castle'),
+			// 'WoeHoursLabel'		=> array('module' => 'woe'),
+			// 'CastlesLabel'		=> array('module' => 'castle'),
 			'WhosOnlineLabel'	=> array('module' => 'character', 'action' => 'online'),
-			'MapStaticsLabel' 	=> array('module' => 'character', 'action' => 'mapstats'),
-			'RankingInfoLabel'	=> array('module' => 'ranking', 'action' => 'character'),
-			'VendingInfoLabel'	=> array('module' => 'vending'),
-			'BuyingstoreInfoLabel'	=> array('module' => 'buyingstore'),
+			// 'MapStaticsLabel' 	=> array('module' => 'character', 'action' => 'mapstats'),
+			// 'RankingInfoLabel'	=> array('module' => 'ranking', 'action' => 'character'),
+			// 'VendingInfoLabel'	=> array('module' => 'vending'),
+			// 'BuyingstoreInfoLabel'	=> array('module' => 'buyingstore'),
 		),
 		'DatabaseLabel'		=> array(
 			'ItemDatabaseLabel'	=> array('module' => 'item'),

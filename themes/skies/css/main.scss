@@ -69,7 +69,7 @@ body > .container {
 }
 
 .ic-info {
-    background: url("../img/info.gif") center 0px no-repeat;
+    background: url("../img/bulletin.gif") center 0px no-repeat;
     margin: 0 auto;
     background-size: contain;
     margin-bottom: 7px;
@@ -98,6 +98,20 @@ body > .container {
 
 .ic-admin {
     background: url("../img/admin.gif") center 0px no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+    margin-bottom: 7px;
+}
+
+.ic-news {
+    background: url("../img/forums.gif") center 0px no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+    margin-bottom: 7px;
+}
+
+.ic-downloads {
+    background: url("../img/item.gif") center 0px no-repeat;
     margin: 0 auto;
     background-size: contain;
     margin-bottom: 7px;

@@ -38,7 +38,6 @@
 </head>
 
 <body>
-
 	<!-- Fixed navbar -->
 	<div class="bg-header">
 		<div class="btn-discord">
