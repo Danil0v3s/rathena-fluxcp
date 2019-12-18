@@ -64,7 +64,7 @@
 				<?php include('main/loginsmall.php'); ?>
 			<?php endif ?>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-8 ro-container">
 			<?php if (Flux::config('DebugMode') && @gethostbyname(Flux::config('ServerAddress')) == '127.0.0.1') : ?>
 				<p class="notice">Please change your <strong>ServerAddress</strong> directive in your application config to your server's real address (e.g., myserver.com).</p>
 			<?php endif ?>
@@ -78,4 +78,4 @@
 			<?php include $this->themePath('main/submenu.php', true) ?>
 
 			<!-- Page menu -->
-			<?php include $this->themePath('main/pagemenu.php', true) ?>
+			<?php //include $this->themePath('main/pagemenu.php', true) ?>
