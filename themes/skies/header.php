@@ -8,7 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-
+	<meta property="og:title" content="SkiesRO - Full PvP 999/255">
+	<meta property="og:image" content="https://i.imgur.com/G4eZSQy.png">
+	<meta property="og:description" content="Full PvP 999/255. Classes balanceadas, sem donates, delay em pots, sistemas únicos e muito mais!">
+	<meta property="og:url" content="http://www.skiesro.com.br">
 	<?php if (isset($metaRefresh)) : ?>
 		<meta http-equiv="refresh" content="<?php echo $metaRefresh['seconds'] ?>; URL=<?php echo $metaRefresh['location'] ?>" />
 	<?php endif ?>
@@ -38,11 +41,16 @@
 
 	<!-- Fixed navbar -->
 	<div class="bg-header">
-		<a href="https://discordapp.com/invite/u9z63b3">
-			<div class="btn-discord">
+		<div class="btn-discord">
+			<a href="https://discordapp.com/invite/u9z63b3">
 				<img src="<?php echo $this->themePath('img/discord-full.svg') ?>" />
-			</div>
-		</a>
+			</a>
+		</div>
+		<div class="logo">
+			<a href="<?php echo $this->basePath ?>">
+				<img src='<?php echo $this->themePath('img/logo.png') ?>' />
+			</a>
+		</div>
 		<div id="drawmoveCanvasContainer">
 		</div>
 	</div>

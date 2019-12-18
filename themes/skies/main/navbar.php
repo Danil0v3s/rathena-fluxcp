@@ -15,7 +15,10 @@ $menuIcons = array(
 			<?php if (!empty($menuItems)) : ?>
 				<?php foreach ($menuItems as $menuCategory => $menus) : ?>
 					<?php if (!empty($menus)) : ?>
-						<li class="dropdown ro-dropdown">
+						<?php if ($menuCategory == 'AccountLabel' && !$session->isLoggedIn()) : ?>
+							
+						<?php else : ?>
+							<li class="dropdown ro-dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<div class="ro-icon <?php echo $menuIcons[$menuCategory] ?>"></div>
 								<span class="menu-item"><?php echo htmlspecialchars(Flux::message($menuCategory)) ?></span>
@@ -28,6 +31,7 @@ $menuIcons = array(
 								<?php endforeach ?>
 							</ul>
 						</li>
+						<?php endif ?>
 					<?php endif ?>
 				<?php endforeach ?>
 			<?php endif ?>
