@@ -33,9 +33,9 @@ $menuIcons = array(
 										<div class="ro-icon <?php echo $menuIcons[$menuCategory] ?>"></div>
 										<span class="menu-item"><?php echo htmlspecialchars(Flux::message($menuCategory)) ?></span>
 									</a>
-									<ul class="dropdown-menu">
+									<ul class="dropdown-menu ro-dropdown">
 										<?php foreach ($menus as $menuItem) :  ?>
-											<li>
+											<li class="ro-dropdown-li">
 												<a href="<?php echo $menuItem['url'] ?>"><?php echo htmlspecialchars(Flux::message($menuItem['name'])) ?></a>
 											</li>
 										<?php endforeach ?>
