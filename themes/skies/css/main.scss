@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Allembert';
+    src: url('./font/allembert.ttf');
+}
+
+@font-face {
+    font-family: 'Gumbo';
+    src: url('./font/gumbo.otf');
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gumbo' !important;
+}
+
 a:hover {
     background-color: skyblue;
 }
@@ -99,3 +113,12 @@ body > .container {
     bottom: 5%;
     border-radius: 7px;
 }
+
+span.menu-item {
+    font-family: 'Gumbo';
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }

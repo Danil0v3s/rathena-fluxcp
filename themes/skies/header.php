@@ -40,7 +40,7 @@
 	<div class="bg-header">
 		<a href="https://discordapp.com/invite/u9z63b3">
 			<div class="btn-discord">
-				<img src="/themes/skies/img/discord-full.svg" />
+				<img src="<?php echo $this->themePath('img/discord-full.svg') ?>" />
 			</div>
 		</a>
 		<div id="drawmoveCanvasContainer">
@@ -48,27 +48,26 @@
 	</div>
 	<?php include $this->themePath('main/navbar.php', true) ?>
 
-	<div class="container">
-		<?php //include 'main/sidebar.php' 
-		?>
-		<?php //include 'main/loginbox.php' 
-		?>
+	<div class="container-fluid">
+		<div class="col-md-2">
+			<?php if ($session->isLoggedIn()) : ?>
+				<?php include('main/loginbox.php'); ?>
+			<?php else : ?>
+				<?php include('main/loginsmall.php'); ?>
+			<?php endif ?>
+		</div>
+		<div class="col-md-10">
+			<?php if (Flux::config('DebugMode') && @gethostbyname(Flux::config('ServerAddress')) == '127.0.0.1') : ?>
+				<p class="notice">Please change your <strong>ServerAddress</strong> directive in your application config to your server's real address (e.g., myserver.com).</p>
+			<?php endif ?>
 
-		<?php if (Flux::config('DebugMode') && @gethostbyname(Flux::config('ServerAddress')) == '127.0.0.1') : ?>
-			<p class="notice">Please change your <strong>ServerAddress</strong> directive in your application config to your server's real address (e.g., myserver.com).</p>
-		<?php endif ?>
+			<!-- Messages -->
+			<?php if ($message = $session->getMessage()) : ?>
+				<p class="message"><?php echo htmlspecialchars($message) ?></p>
+			<?php endif ?>
 
-		<!-- Messages -->
-		<?php if ($message = $session->getMessage()) : ?>
-			<p class="message"><?php echo htmlspecialchars($message) ?></p>
-		<?php endif ?>
+			<!-- Sub menu -->
+			<?php include $this->themePath('main/submenu.php', true) ?>
 
-		<!-- Sub menu -->
-		<?php include $this->themePath('main/submenu.php', true) ?>
-
-		<!-- Page menu -->
-		<?php include $this->themePath('main/pagemenu.php', true) ?>
-
-		<!-- Credit balance -->
-		<?php //if (in_array($params->get('module'), array('donate', 'purchase'))) include 'main/balance.php' 
-		?>
+			<!-- Page menu -->
+			<?php include $this->themePath('main/pagemenu.php', true) ?>

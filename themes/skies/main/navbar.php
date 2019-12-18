@@ -18,7 +18,7 @@ $menuIcons = array(
 						<li class="dropdown ro-dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<div class="ro-icon <?php echo $menuIcons[$menuCategory] ?>"></div>
-								<?php echo htmlspecialchars(Flux::message($menuCategory)) ?> <b class="caret"></b>
+								<span class="menu-item"><?php echo htmlspecialchars(Flux::message($menuCategory)) ?></span>
 							</a>
 							<ul class="dropdown-menu">
 								<?php foreach ($menus as $menuItem) :  ?>
@@ -38,7 +38,7 @@ $menuIcons = array(
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<div class="ro-icon ic-admin"></div>
-						Admin Menu <b class="caret"></b>
+						<span class="menu-item">Admin Menu</span>
 					</a>
 					<ul class="dropdown-menu">
 						<?php foreach ($adminMenuItems as $menuItem) : ?>
