@@ -1,19 +1,30 @@
 @font-face {
-    font-family: 'Allembert';
-    src: url('./font/allembert.ttf');
+  font-family: "Allembert";
+  src: url("./font/allembert.ttf");
 }
 
 @font-face {
-    font-family: 'Gumbo';
-    src: url('./font/gumbo.otf');
+  font-family: "Gumbo";
+  src: url("./font/gumbo.otf");
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Gumbo' !important;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gumbo" !important;
 }
 
 a:hover {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 
 body {
@@ -22,7 +33,7 @@ body {
 }
 
 body > .container {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .bg-header {
@@ -36,110 +47,127 @@ body > .container {
 }
 
 .logo {
-    height: 250px;
-    width: auto;
-    align-self: center;
- }
+  height: 250px;
+  width: auto;
+  align-self: center;
+}
 
- #mainCanvas {
-	
+#drawmoveCanvasContainer {
+  margin-top: -30px;
+}
+.navbar-default {
+  background: transparent;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .navbar {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 .navbar.center .navbar-inner {
-    text-align: center;
+  background: transparent !important;
+  text-align: center;
 }
 
 .navbar.center .navbar-inner .nav {
-    display:inline-block;
-    float: none;
+  display: inline-block;
+  float: none;
+  background-color: #473736;
+  border-radius: 60px;
+  margin-top: -43px;
+}
+
+.navbar-nav > li > a {
+  color: #fafafa !important;
+}
+
+.navbar-nav > li > a:hover {
+  color: #fac69b !important;
 }
 
 .ro-dropdown {
-    min-width: 160px;
+  min-width: 160px;
 }
 
 .ro-icon {
-    position: relative;
-    width: 24px;
-    height: 24px;
+  position: relative;
+  width: 24px;
+  height: 24px;
 }
 
 .ic-info {
-    background: url("../img/bulletin.gif") center 0px no-repeat;
-    margin: 0 auto;
-    background-size: contain;
-    margin-bottom: 7px;
+  background: url("../img/bulletin.gif") center 0px no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 7px;
 }
 
 .ic-main {
-    background: url("../img/info.gif") center 0px no-repeat;
-    margin: 0 auto;
-    background-size: contain;
-    margin-bottom: 7px;
+  background: url("../img/info.gif") center 0px no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 7px;
 }
 
 .ic-account {
-    background: url("../img/account.gif") center 0px no-repeat;
-    margin: 0 auto;
-    background-size: contain;
-    margin-bottom: 7px;
+  background: url("../img/account.gif") center 0px no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 7px;
 }
 
 .ic-db {
-    background: url("../img/search.gif") center 0px no-repeat;
-    margin: 0 auto;
-    background-size: contain;
-    margin-bottom: 7px;
+  background: url("../img/search.gif") center 0px no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 7px;
 }
 
 .ic-admin {
-    background: url("../img/admin.gif") center 0px no-repeat;
-    margin: 0 auto;
-    background-size: contain;
-    margin-bottom: 7px;
+  background: url("../img/admin.gif") center 0px no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 7px;
 }
 
 .ic-news {
-    background: url("../img/forums.gif") center 0px no-repeat;
-    margin: 0 auto;
-    background-size: contain;
-    margin-bottom: 7px;
+  background: url("../img/forums.gif") center 0px no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 7px;
 }
 
 .ic-downloads {
-    background: url("../img/item.gif") center 0px no-repeat;
-    margin: 0 auto;
-    background-size: contain;
-    margin-bottom: 7px;
+  background: url("../img/item.gif") center 0px no-repeat;
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 7px;
 }
 
 .btn-discord {
-    position: relative;
-    float: left;
-    width: 200px;
-    align-self: flex-end;
+  position: relative;
+  float: left;
+  width: 200px;
+  align-self: flex-end;
 }
 
 .btn-discord > a {
-    padding: 10px;
-    background: whitesmoke;
-    position: absolute;
-    width: 100%;
-    left: 5%;
-    bottom: 0;
-    margin-bottom: 5%;
-    border-radius: 7px;
+  padding: 10px;
+  background: whitesmoke;
+  position: absolute;
+  width: 100%;
+  left: 5%;
+  bottom: 0;
+  margin-bottom: 5%;
+  border-radius: 7px;
 }
 
 span.menu-item {
-    font-family: 'Gumbo';
+  font-family: "Gumbo";
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; // remove the gap so it doesn't close
- }
+  display: block;
+  margin-top: 0; // remove the gap so it doesn't close
+}
