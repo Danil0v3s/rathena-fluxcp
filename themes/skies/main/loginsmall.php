@@ -11,16 +11,21 @@
 			<?php endif ?>
 			<div class="form-group input-group input-group-sm">
 				<span class="input-group-addon" id="sizing-addon3"><img src="<?php echo $this->themePath('img/rune-a.gif') ?>" height="100%"></span>
-				<input class="form-control" placeholder="username" type="text" name="username" id="login_username" value="<?php echo htmlspecialchars($params->get('username')) ?>" />
+				<input class="form-control" placeholder="<?php echo htmlspecialchars(Flux::message('AccountUsernameLabel')) ?>" type="text" name="username" id="login_username" value="<?php echo htmlspecialchars($params->get('username')) ?>" />
 			</div>
 			<div class="form-group input-group input-group-sm">
 				<span class="input-group-addon" id="sizing-addon3"><img src="<?php echo $this->themePath('img/rune-b.gif') ?>" height="100%"></span>
-				<input class="form-control" placeholder="password" type="password" name="password" id="login_password" />
+				<input class="form-control" placeholder="<?php echo htmlspecialchars(Flux::message('AccountPasswordLabel')) ?>" type="password" name="password" id="login_password" />
 			</div>
+			<?php if ($auth->actionAllowed('account', 'create')) : ?>
+				<p><?php printf(Flux::message('LoginPageMakeAccount'), $this->url('account', 'create')); ?></p>
+			<?php endif ?>
 			<div class="form-group input-group-sm">
-				<input class="btn btn-primary mb-2 pull-right" type="submit" value="<?php echo htmlspecialchars(Flux::message('LoginButton')) ?>" />
+				<input class="btn btn-primary mb-2 pull-left" type="submit" value="<?php echo htmlspecialchars(Flux::message('LoginButton')) ?>" />
+				<img src="<?php echo $this->themePath('img/kafra.gif') ?>" class="pull-right" />
 			</div>
 		</form>
+
 	</div>
 </div>
 
