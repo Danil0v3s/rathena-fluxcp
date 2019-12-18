@@ -39,7 +39,7 @@
 
 <body>
 	<!-- Fixed navbar -->
-	<div class="bg-header">
+	<div class="bg-header container-fluid">
 		<div class="btn-discord">
 			<a href="https://discordapp.com/invite/u9z63b3">
 				<img src="<?php echo $this->themePath('img/discord-full.svg') ?>" />
@@ -50,6 +50,7 @@
 				<img src='<?php echo $this->themePath('img/logo.png') ?>' />
 			</a>
 		</div>
+		
 		<div id="drawmoveCanvasContainer">
 		</div>
 	</div>
