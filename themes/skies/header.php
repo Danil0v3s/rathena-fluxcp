@@ -16,7 +16,7 @@
 		<meta http-equiv="refresh" content="<?php echo $metaRefresh['seconds'] ?>; URL=<?php echo $metaRefresh['location'] ?>" />
 	<?php endif ?>
 	<title><?php echo Flux::config('SiteTitle');
-																					if (isset($title)) echo ": $title" ?></title>
+			if (isset($title)) echo ": $title" ?></title>
 	<link rel="icon" type="image/x-icon" href="./favicon.ico" />
 	<link rel="stylesheet" href="<?php echo $this->themePath('css/flux.css') ?>" type="text/css" media="screen" title="" charset="utf-8" />
 	<link rel="stylesheet" href="<?php echo $this->themePath('css/main.scss') ?>" type="text/css" media="screen" title="" charset="utf-8" />
@@ -50,7 +50,7 @@
 				<img src='<?php echo $this->themePath('img/logo.png') ?>' />
 			</a>
 		</div>
-		
+
 		<div id="drawmoveCanvasContainer">
 		</div>
 	</div>
@@ -58,9 +58,7 @@
 
 	<div class="container-fluid">
 		<div class="col-md-2">
-			<?php if ($session->isLoggedIn()) : ?>
-				<?php include('main/loginbox.php'); ?>
-			<?php else : ?>
+			<?php if (!$session->isLoggedIn()) : ?>
 				<?php include('main/loginsmall.php'); ?>
 			<?php endif ?>
 		</div>
@@ -78,4 +76,5 @@
 			<?php include $this->themePath('main/submenu.php', true) ?>
 
 			<!-- Page menu -->
-			<?php //include $this->themePath('main/pagemenu.php', true) ?>
+			<?php //include $this->themePath('main/pagemenu.php', true) 
+			?>

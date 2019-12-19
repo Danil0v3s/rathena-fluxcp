@@ -1,6 +1,45 @@
 <?php if (!defined('FLUX_ROOT')) exit; ?>
 
 </div> <!-- close column -->
+<div class="col-md-2 server-status-box">
+	<?php 
+		$cServerStatus = array();
+		foreach (Flux::$loginAthenaGroupRegistry as $groupName => $loginAthenaGroup) {
+			if (!array_key_exists($groupName, $cServerStatus)) {
+				$cServerStatus[$groupName] = array();
+			}
+			$loginServerUp = $loginAthenaGroup->loginServer->isUp();
+			foreach ($loginAthenaGroup->athenaServers as $athenaServer) {
+				$serverName = $athenaServer->serverName;
+				$sql = "SELECT COUNT(char_id) AS players_online FROM {$athenaServer->charMapDatabase}.char WHERE online > 0";
+				$sth = $loginAthenaGroup->connection->getStatement($sql);
+				$sth->execute();
+				$res = $sth->fetch();
+				$cServerStatus[$groupName][$serverName] = array(
+					'loginServerUp' => $loginServerUp,
+					'charServerUp' => $athenaServer->charServer->isUp(),
+					'mapServerUp' => $athenaServer->mapServer->isUp(),
+					'playersOnline' => intval($res ? $res->players_online : 0)
+				);
+			}
+		}
+	?>
+	<?php foreach ($cServerStatus as $privServerName => $gameServers) : ?>
+		<?php foreach ($gameServers as $serverName => $gameServer) : ?>
+			<?php
+				$sStatus = "up";
+				if (!($gameServer['loginServerUp'] && $gameServer['charServerUp'] && $gameServer['mapServerUp'])){
+					$sStatus = "down";
+				}
+			?>
+			<h3 class="invert"><?php echo htmlspecialchars(Flux::message('ServerStatusHeading')) ?></h3>
+			<h4 class="<?php echo $sStatus ?>"><?php if ($sStatus) echo "ONLINE"; else echo "OFFLINE"; ?></h4>
+			<h3 class="invert"><?php echo htmlspecialchars(Flux::message('ServerStatusOnlineLabel')) ?></h3>
+			<h4 class="invert"><?php echo $gameServer['playersOnline'] ?></h4>
+		<?php endforeach ?>
+	<?php endforeach ?>
+	<!-- <img src="<?php echo $this->themePath('img/coffin.gif') ?>" /> -->
+</div>
 </div> <!-- close container -->
 <div id="footer">
 	<div class="container">

@@ -5,7 +5,7 @@
 		<?php foreach ($news as $nrow) : ?>
 			<div class="newsCont">
 				<div class="news-title">
-					<h4><?php echo $nrow->title ?></h4>
+					<h3><?php echo $nrow->title ?></h3>
 					<span class="newsDate"><small>by <?php echo $nrow->author ?> on <?php echo date(Flux::config('DateFormat'), strtotime($nrow->created)) ?></small></span>
 				</div>
 

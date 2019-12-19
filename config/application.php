@@ -247,7 +247,7 @@ return array(
 		// ),
 		'AccountLabel'		=> array(
 			'AccountCreateHeading'		=> array('module' => 'account', 'action' => 'create'),
-			'LoginTitle'			=> array('module' => 'account', 'action' => 'login'),
+			// 'LoginTitle'			=> array('module' => 'account', 'action' => 'login'),
 			'MyAccountLabel'	=> array('module' => 'account', 'action' => 'view'),
 			'HistoryLabel'		=> array('module' => 'history'),
 			// 'ServiceDeskLabel'	=> array('module' => 'servicedesk'),
@@ -316,7 +316,7 @@ return array(
 			// 'transfer'		=> 'Transfer Credits',
 			// 'xferlog'		=> 'Credit Transfer History',
 			// 'cart'			=> 'Go to Shopping Cart',
-			'login'			=> 'Login',
+			// 'login'			=> 'Login',
 			'create'		=> 'Register',
 			'resetpass'		=> 'Reset Password',
 			// 'resend'		=> 'Resend E-mail Confirmation'
