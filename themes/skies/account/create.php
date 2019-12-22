@@ -56,10 +56,10 @@
 		</div>
 	</div>
 
-	<div class="form-group hidden">
+	<div class="form-group">
 		<label for="register_email_address" class="col-sm-2 control-label"><?php echo htmlspecialchars(Flux::message('AccountEmailLabel2')) ?></label>
 		<div class="col-sm-3">
-			<input type="text" name="email_address2" id="register_email_address2" value="<?php echo htmlspecialchars($params->get('email_address')) ?>" class="form-control" />
+			<input type="email" name="email_address2" id="register_email_address2" value="<?php echo htmlspecialchars($params->get('email_address')) ?>" class="form-control" />
 		</div>
 	</div>
 

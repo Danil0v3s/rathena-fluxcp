@@ -76,7 +76,7 @@ return array(
 	'ShowCopyright'				=> true,					// Whether or not to show the copyright footer.
 	'ShowRenderDetails'			=> false,					// Shows the "page rendered in X seconds" and "number of queries executed: X" in the default theme.
 	'UseCleanUrls'				=> false,					// Set to true if you're running Apache and it supports mod_rewrite and .htaccess files.
-	'DebugMode'					=> true,					// Set to false to minimize technical details from being output by Flux. WARNING: DO NOT USE THIS OPTION ON A PUBLICALLY-ACCESSIBLE CP.
+	'DebugMode'					=> false,					// Set to false to minimize technical details from being output by Flux. WARNING: DO NOT USE THIS OPTION ON A PUBLICALLY-ACCESSIBLE CP.
 	'UseCaptcha'				=> false,					// Use CAPTCHA image for account registration to prevent automated account creations. (Requires GD2/FreeType2)
 	'UseLoginCaptcha'			=> false,					// Use CAPTCHA image for account logins. (Requires GD2/FreeType2)
 	'EnableReCaptcha'			=> true,					// Enables the use of reCAPTCHA instead of Flux's native GD2 library (http://www.google.com/recaptcha)
@@ -217,12 +217,12 @@ return array(
 	'SDCreditReward'			=> 10,						// Number of credits to award account.
 
 	// Discord Webhooks
-	'DiscordUseWebhook'			=> false,
-	'DiscordWebhookURL'			=> 'enter_webhook_url_from_discord_here',
+	'DiscordUseWebhook'			=> true,
+	'DiscordWebhookURL'			=> 'https://discordapp.com/api/webhooks/658293368899633184/tAghCJ_N5jYGRZrkGH1L-wSbKwsgMKlzoYSI-Q0bTZ3qEsjl5oaONGjfLoPTrnFwelPS',
 	'DiscordSendOnRegister'			=> true,
-	'DiscordSendOnNewTicket'		=> true,
-	'DiscordSendOnWebCommand'		=> true,
-	'DiscordSendOnMarketing'		=> true,
+	'DiscordSendOnNewTicket'		=> false,
+	'DiscordSendOnWebCommand'		=> false,
+	'DiscordSendOnMarketing'		=> false,
 
 	// These are the main menu items that should be displayed by themes.
 	// They route to modules and actions.  Whether they are displayed or
