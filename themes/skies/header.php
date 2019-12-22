@@ -9,8 +9,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta property="og:title" content="SkiesRO - Full PvP 999/255">
-	<meta property="og:image" content="https://i.imgur.com/G4eZSQy.png">
-	<meta property="og:description" content="Full PvP 999/255. Classes balanceadas, sem donates, delay em pots, sistemas únicos e muito mais!">
+	<meta property="og:image" content="https://i.imgur.com/VQh4PKs.png">
+	<meta property="og:description" content="Full PvP 999/255. O LENDÁRIO FULL PVP">
 	<meta property="og:url" content="http://www.skiesro.com.br">
 	<?php if (isset($metaRefresh)) : ?>
 		<meta http-equiv="refresh" content="<?php echo $metaRefresh['seconds'] ?>; URL=<?php echo $metaRefresh['location'] ?>" />
