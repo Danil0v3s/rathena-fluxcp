@@ -253,10 +253,10 @@ return array(
 			// 'ServiceDeskLabel'	=> array('module' => 'servicedesk'),
 			'LogoutTitle'		=> array('module' => 'account', 'action' => 'logout'),
 		),
-		// 'DonationsLabel'		=> array(
-		// 	'PurchaseLabel'		=> array('module' => 'purchase'),
-		// 	'DonateLabel'		=> array('module' => 'donate'),
-		// ),
+		'DonationsLabel'		=> array(
+			// 	'PurchaseLabel'		=> array('module' => 'purchase'),
+			'DonateLabel'		=> array('module' => 'donate'),
+		),
 		'InformationLabel'	=> array(
 			'ServerInfoLabel'	=> array('module' => 'pages', 'action' => 'content&path=informations'),
 			'ServerStatusLabel'	=> array('module' => 'server', 'action' => 'status'),
@@ -522,4 +522,3 @@ return array(
 		'ItemDescTable'     	=> 'cp_itemdesc',
 	)
 );
-?>

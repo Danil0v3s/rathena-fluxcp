@@ -7,7 +7,8 @@ $menuIcons = array(
 	'InformationLabel'	=> 'ic-info',
 	'DatabaseLabel'	=> 'ic-db',
 	'NewsLabel' => 'ic-news',
-	'DownloadsLabel' => 'ic-downloads'
+	'DownloadsLabel' => 'ic-downloads',
+	'DonationsLabel' => 'ic-donations'
 )
 ?>
 <nav class="navbar navbar-default center" role="navigation">
