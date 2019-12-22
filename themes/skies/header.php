@@ -76,5 +76,5 @@
 			<?php include $this->themePath('main/submenu.php', true) ?>
 
 			<!-- Page menu -->
-			<?php //include $this->themePath('main/pagemenu.php', true) 
+			<?php include $this->themePath('main/pagemenu.php', true) 
 			?>
